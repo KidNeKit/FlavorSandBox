@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "289666566209",
+    "project_id": "flavors-sandbox",
+    "storage_bucket": "flavors-sandbox.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289666566209:android:1c01f4ba0eb0b606259ec0",
+        "android_client_info": {
+          "package_name": "com.mercury.flavors.sandbox"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNkOIqBb9nF05Pegb7qgyDaKJbLOp5rHE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289666566209:android:4a7f640612e68092259ec0",
+        "android_client_info": {
+          "package_name": "com.mercury.flavors.sandbox.dev"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNkOIqBb9nF05Pegb7qgyDaKJbLOp5rHE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289666566209:android:3773598d7955fb24259ec0",
+        "android_client_info": {
+          "package_name": "com.mercury.flavors.sandbox.stg"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNkOIqBb9nF05Pegb7qgyDaKJbLOp5rHE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
