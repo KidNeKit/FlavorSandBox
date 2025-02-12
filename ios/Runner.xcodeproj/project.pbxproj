@@ -223,6 +223,7 @@
 				9705A1C41CF9048500538489 /* Embed Frameworks */,
 				3B06AD1E1E4923F5004D2608 /* Thin Binary */,
 				23D8CABD66DFD14707C00863 /* [CP] Embed Pods Frameworks */,
+				AC84C80D2D5C79A3000F93A0 /* [Firebase] Upload Crashlytics Symbols */,
 			);
 			buildRules = (
 			);
@@ -360,6 +361,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "cp \"${PROJECT_DIR}/${TARGET_NAME}/Firebase/${GOOGLE_SERVICE_INFO_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\"\n";
+		};
+		AC84C80D2D5C79A3000F93A0 /* [Firebase] Upload Crashlytics Symbols */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"\"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}\"",
+				"\"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)\"",
+			);
+			name = "[Firebase] Upload Crashlytics Symbols";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/FirebaseCrashlytics/upload-symbols\" --flutter-project \"$PROJECT_DIR/$FIREBASE_APP_ID_JSON_FILENAME\" \n";
 		};
 		B81AAEF96E819835F1C0D1CD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -516,6 +537,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = 78YN467J2S;
 				ENABLE_BITCODE = NO;
+				FIREBASE_APP_ID_JSON_FILENAME = firebase_app_id_file_prod.json;
 				FLAVOR_DISPLAY_NAME = "Flavors SandBox";
 				GOOGLE_SERVICE_INFO_NAME = "GoogleService-Info-Prod.plist";
 				INFOPLIST_FILE = Runner/Info.plist;
@@ -701,6 +723,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = 78YN467J2S;
 				ENABLE_BITCODE = NO;
+				FIREBASE_APP_ID_JSON_FILENAME = firebase_app_id_file_prod.json;
 				FLAVOR_DISPLAY_NAME = "Flavors SandBox";
 				GOOGLE_SERVICE_INFO_NAME = "GoogleService-Info-Prod.plist";
 				INFOPLIST_FILE = Runner/Info.plist;
@@ -726,6 +749,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = 78YN467J2S;
 				ENABLE_BITCODE = NO;
+				FIREBASE_APP_ID_JSON_FILENAME = firebase_app_id_file_prod.json;
 				FLAVOR_DISPLAY_NAME = "Flavors SandBox";
 				GOOGLE_SERVICE_INFO_NAME = "GoogleService-Info-Prod.plist";
 				INFOPLIST_FILE = Runner/Info.plist;
@@ -807,6 +831,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = 78YN467J2S;
 				ENABLE_BITCODE = NO;
+				FIREBASE_APP_ID_JSON_FILENAME = firebase_app_id_file_stg.json;
 				FLAVOR_DISPLAY_NAME = "[STG] Flavors SandBox";
 				GOOGLE_SERVICE_INFO_NAME = "GoogleService-Info-Stg.plist";
 				INFOPLIST_FILE = Runner/Info.plist;
@@ -907,6 +932,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = 78YN467J2S;
 				ENABLE_BITCODE = NO;
+				FIREBASE_APP_ID_JSON_FILENAME = firebase_app_id_file_dev.json;
 				FLAVOR_DISPLAY_NAME = "[DEV] Flavors SandBox";
 				GOOGLE_SERVICE_INFO_NAME = "GoogleService-Info-Dev.plist";
 				INFOPLIST_FILE = Runner/Info.plist;
@@ -1004,6 +1030,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = 78YN467J2S;
 				ENABLE_BITCODE = NO;
+				FIREBASE_APP_ID_JSON_FILENAME = firebase_app_id_file_stg.json;
 				FLAVOR_DISPLAY_NAME = "[STG] Flavors SandBox";
 				GOOGLE_SERVICE_INFO_NAME = "GoogleService-Info-Stg.plist";
 				INFOPLIST_FILE = Runner/Info.plist;
@@ -1098,6 +1125,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = 78YN467J2S;
 				ENABLE_BITCODE = NO;
+				FIREBASE_APP_ID_JSON_FILENAME = firebase_app_id_file_dev.json;
 				FLAVOR_DISPLAY_NAME = "[DEV] Flavors SandBox";
 				GOOGLE_SERVICE_INFO_NAME = "GoogleService-Info-Dev.plist";
 				INFOPLIST_FILE = Runner/Info.plist;
@@ -1190,6 +1218,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = 78YN467J2S;
 				ENABLE_BITCODE = NO;
+				FIREBASE_APP_ID_JSON_FILENAME = firebase_app_id_file_stg.json;
 				FLAVOR_DISPLAY_NAME = "[STG] Flavors SandBox";
 				GOOGLE_SERVICE_INFO_NAME = "GoogleService-Info-Stg.plist";
 				INFOPLIST_FILE = Runner/Info.plist;
@@ -1282,6 +1311,7 @@
 				CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)";
 				DEVELOPMENT_TEAM = 78YN467J2S;
 				ENABLE_BITCODE = NO;
+				FIREBASE_APP_ID_JSON_FILENAME = firebase_app_id_file_dev.json;
 				FLAVOR_DISPLAY_NAME = "[DEV] Flavors SandBox";
 				GOOGLE_SERVICE_INFO_NAME = "GoogleService-Info-Dev.plist";
 				INFOPLIST_FILE = Runner/Info.plist;
